@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				font-family: monospace;
+				color: white;
+			}
+
+			body {
+				background-color: rgb(31, 31, 31);
+			}
+
+			.product-card {
+				margin-bottom: 4rem;
+			}
+		</style>
+
+		<!-- <script type="module" defer>
+			const main = document.getElementsByTagName('main')[0]
+
+			fetch('./data.json')
+				.then((response) => response.json())
+				.then((data) => {
+					data.forEach((product) => {
+						const div = document.createElement('div')
+						div.classList.add('product-card')
+
+						const h2 = document.createElement('h2')
+						h2.classList.add('product-name')
+
+						const h3 = document.createElement('h3')
+						h3.classList.add('price')
+
+						const h4 = document.createElement('h4')
+						h4.classList.add('availability')
+
+						const ratingSpan = document.createElement('span')
+						ratingSpan.classList.add('product-rating')
+
+						h2.innerText = product.product_name
+						h3.innerText = product.price
+						h4.innerText = product.availability
+						ratingSpan.innerText = product.product_rating
+
+						div.appendChild(h2)
+						div.appendChild(h3)
+						div.appendChild(h4)
+						div.appendChild(ratingSpan)
+
+						main.appendChild(div)
+					})
+				})
+				.catch((error) => console.error('Error fetching JSON:', error))
+		</script> -->
+	</head>
+	<body>
+		<main>
+			<div class="product-card">
+				<h2 class="product-name">old leader</h2>
+				<h3 class="price">33.04</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">3.9</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">though despite</h2>
+				<h3 class="price">34.22</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">rule knowledge</h2>
+				<h3 class="price">95.76</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">2.1</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">factor finish</h2>
+				<h3 class="price">85.99</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">2.9</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">approach wear</h2>
+				<h3 class="price">51.95</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">4.6</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">look no</h2>
+				<h3 class="price">98.92</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">3.5</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">to street</h2>
+				<h3 class="price">53.04</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">4.2</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">enter own</h2>
+				<h3 class="price">51.52</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">technology coach</h2>
+				<h3 class="price">47.31</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">3.4</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">goal really</h2>
+				<h3 class="price">90.29</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">3.9</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">blood also</h2>
+				<h3 class="price">76.83</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">course until</h2>
+				<h3 class="price">37.61</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">truth candidate</h2>
+				<h3 class="price">16.87</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">front opportunity</h2>
+				<h3 class="price">12</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">3.4</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">clearly my</h2>
+				<h3 class="price">63.76</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">chance short</h2>
+				<h3 class="price">55.17</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">2.7</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">fight box</h2>
+				<h3 class="price">62.92</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">1.3</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">community two</h2>
+				<h3 class="price">67.4</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">best impact</h2>
+				<h3 class="price">29.67</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">1.4</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">draw evidence</h2>
+				<h3 class="price">63.24</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">not usually</h2>
+				<h3 class="price">38.62</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">south current</h2>
+				<h3 class="price">67.32</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">natural nature</h2>
+				<h3 class="price">54.87</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">3.1</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">them need</h2>
+				<h3 class="price">35.33</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">4.3</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">would realize</h2>
+				<h3 class="price">75.89</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">threat magazine</h2>
+				<h3 class="price">29.85</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">3.7</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">about run</h2>
+				<h3 class="price">43.21</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">1.3</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">so project</h2>
+				<h3 class="price">68.35</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">3.3</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">require continue</h2>
+				<h3 class="price">83.86</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">2.8</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">artist discover</h2>
+				<h3 class="price">51.5</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">culture poor</h2>
+				<h3 class="price">41.79</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">top business</h2>
+				<h3 class="price">15.65</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">3.8</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">population case</h2>
+				<h3 class="price">15.04</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">report prevent</h2>
+				<h3 class="price">31.18</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">4.4</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">cause political</h2>
+				<h3 class="price">74.42</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">individual close</h2>
+				<h3 class="price">34.36</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">1</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">material let</h2>
+				<h3 class="price">94.74</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">1.1</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">space people</h2>
+				<h3 class="price">63.97</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">his week</h2>
+				<h3 class="price">22.77</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">bit group</h2>
+				<h3 class="price">15.92</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">3.3</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">actually choose</h2>
+				<h3 class="price">14.64</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">stand poor</h2>
+				<h3 class="price">25.98</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">employee day</h2>
+				<h3 class="price">34.75</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">operation military</h2>
+				<h3 class="price">33.1</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">exactly type</h2>
+				<h3 class="price">69.65</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">2.8</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">national some</h2>
+				<h3 class="price">69.94</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">2</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">society suffer</h2>
+				<h3 class="price">45.96</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">score research</h2>
+				<h3 class="price">35.8</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">fall theory</h2>
+				<h3 class="price">69.38</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">4.1</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">send natural</h2>
+				<h3 class="price">72.46</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">public skill</h2>
+				<h3 class="price">61.96</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">begin seek</h2>
+				<h3 class="price">72.23</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">4.9</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">rule dream</h2>
+				<h3 class="price">98.15</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">4</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">let enter</h2>
+				<h3 class="price">31.79</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">3.2</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">article ready</h2>
+				<h3 class="price">95.52</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">two blue</h2>
+				<h3 class="price">27.08</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">4.4</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">minute run</h2>
+				<h3 class="price">30.09</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">2.9</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">fish recently</h2>
+				<h3 class="price">40.97</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">4.6</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">its throw</h2>
+				<h3 class="price">76.37</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">1.2</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">on citizen</h2>
+				<h3 class="price">96.24</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">4.2</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">shake hundred</h2>
+				<h3 class="price">90.83</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">grow operation</h2>
+				<h3 class="price">29.94</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">2.2</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">attorney rule</h2>
+				<h3 class="price">33.15</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">2.9</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">see move</h2>
+				<h3 class="price">87.94</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">include building</h2>
+				<h3 class="price">57.11</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">4.1</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">stuff speech</h2>
+				<h3 class="price">37.35</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">tree modern</h2>
+				<h3 class="price">60.26</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">believe bank</h2>
+				<h3 class="price">98.12</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">2.6</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">knowledge phone</h2>
+				<h3 class="price">44.95</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">2.2</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">push fight</h2>
+				<h3 class="price">80.97</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">enter sing</h2>
+				<h3 class="price">77.18</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">3</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">part garden</h2>
+				<h3 class="price">27.09</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">2.5</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">cold actually</h2>
+				<h3 class="price">39.41</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">idea miss</h2>
+				<h3 class="price">97.77</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">3.7</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">per challenge</h2>
+				<h3 class="price">76.37</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">body trade</h2>
+				<h3 class="price">47.17</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">exist agency</h2>
+				<h3 class="price">65.99</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">3.9</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">nothing enter</h2>
+				<h3 class="price">43.43</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">approach culture</h2>
+				<h3 class="price">35.2</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">across range</h2>
+				<h3 class="price">56.25</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">nature language</h2>
+				<h3 class="price">24.45</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">5</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">worker everybody</h2>
+				<h3 class="price">57.37</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">1.1</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">beautiful local</h2>
+				<h3 class="price">65.98</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">data wrong</h2>
+				<h3 class="price">18.78</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">4.6</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">for others</h2>
+				<h3 class="price">28.05</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">4.3</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">discussion young</h2>
+				<h3 class="price">12.83</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">possible trial</h2>
+				<h3 class="price">43.28</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">contain citizen</h2>
+				<h3 class="price">10.97</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">4.1</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">green here</h2>
+				<h3 class="price">97.3</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">American school</h2>
+				<h3 class="price">61.88</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">1.2</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">police be</h2>
+				<h3 class="price">22.51</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">2.1</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">check financial</h2>
+				<h3 class="price">28.1</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">operation artist</h2>
+				<h3 class="price">31.01</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">3.3</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">foot probably</h2>
+				<h3 class="price">65.67</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">somebody product</h2>
+				<h3 class="price">41.18</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">2</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">left activity</h2>
+				<h3 class="price">78.45</h3>
+				<h4 class="availability">Out of Stock</h4>
+				<span class="product-rating">1.1</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">media he</h2>
+				<h3 class="price">53.06</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">computer whole</h2>
+				<h3 class="price">30.05</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">2.7</span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">fly education</h2>
+				<h3 class="price">38.97</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating"></span>
+			</div>
+			<div class="product-card">
+				<h2 class="product-name">leave team</h2>
+				<h3 class="price">46.82</h3>
+				<h4 class="availability">In Stock</h4>
+				<span class="product-rating">3.1</span>
+			</div>
+		</main>
+	</body>
+</html>
